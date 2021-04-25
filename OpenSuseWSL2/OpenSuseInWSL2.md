@@ -18,8 +18,20 @@ The first thing that is necessary to make after install **OpenSuse** is update t
 ```bash
 yourusername@yourmachinename:/mnt/c/Users/yourusername> sudo zypper update
 ```
+If your run and is returned this output below, indicate that your system was updated.
+
+```bash
+yourusername@yourmachinename:/mnt/c/Users/yourusername> sudo zypper update
+[sudo] password for root:
+Loading repository data...
+Reading installed packages...
+Nothing to do.
+yourusername@yourmachinename:/mnt/c/Users/yourusername>
+```
 
 Ok then, now our system was updated and ready for us start the configurations.
+
+
 
 ## References
 
