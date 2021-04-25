@@ -1,0 +1,1 @@
+# OpenSuse in WSL2
