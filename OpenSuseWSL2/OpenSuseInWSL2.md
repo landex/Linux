@@ -31,6 +31,18 @@ yourusername@yourmachinename:/mnt/c/Users/yourusername>
 
 Ok then, now our system was updated and ready for us start the configurations.
 
+The first thing that I like to make is change the default shell from ***bash*** to ***zshell***. But before we need install the ***GIT***
+
+# GIT
+
+Run command below to install ***Git***.
+
+```bash
+
+```
+
+# ZSHELL
+
 
 
 ## References
