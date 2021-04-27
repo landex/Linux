@@ -72,3 +72,13 @@ DESKTOP-KL90B82% pwd
 /home/yourusername/.zfiles
 DESKTOP-KL90B82%
 ```
+
+Now return to ***home*** directory, and create the file called ***.zshenv*** in this case the file must be have this name.
+
+```bash
+DESKTOP-KL90B82% ls -ltra .zshenv
+-rw-r--r-- 1 yourusername yourusername 0 Apr 27 14:33 .zshenv
+DESKTOP-KL90B82% pwd
+/home/yourusername
+DESKTOP-KL90B82%
+```
