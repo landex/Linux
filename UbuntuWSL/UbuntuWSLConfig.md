@@ -33,6 +33,7 @@ sudo usermod -s /usr/bin/zsh $(whoami)
 Now to effective the changes you close and open the terminal, if this window is displayed, the new terminal was set up with default, and now we need make the configurations.
 
 
-<img align="center" src="https://github.com/landex/Linux/blob/main/UbuntuWSL/images/zshell_start_20210426_235211.png" alt="drawing" width="100"/>
+<img align="center" src="https://github.com/landex/Linux/blob/main/UbuntuWSL/images/zshell_start_20210426_235211.png" alt="drawing" width="400"/>
 
 
+In window above, click button **q** to create an ***.kshrc*** file only, we will configure manually the ***ZShell***.
