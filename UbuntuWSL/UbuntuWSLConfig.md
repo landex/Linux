@@ -36,4 +36,4 @@ Now to effective the changes you close and open the terminal, if this window is 
 <img align="center" src="https://github.com/landex/Linux/blob/main/UbuntuWSL/images/zshell_start_20210426_235211.png" alt="drawing" width="400"/>
 
 
-In window above, click button **q** to create an ***.kshrc*** file only, we will configure manually the ***ZShell***.
+In window above, click button **0** to create an ***.kshrc*** file only, we will configure manually the ***ZShell***.
