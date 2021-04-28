@@ -56,29 +56,47 @@ To organize, first create a folder in home directory in this case I'll call the 
 
 * Home Directory
 ```bash
-DESKTOP-KL90B82% pwd
+pwd
 /home/yourusername
 ```
 
 * Create the folder ***.zfiles***
 ```bash
-DESKTOP-KL90B82% mkdir .zfiles
+mkdir .zfiles
 ```
 
 * Access the folder created
 ```bash
-DESKTOP-KL90B82% cd .zfiles
-DESKTOP-KL90B82% pwd
+cd .zfiles
+
+pwd
 /home/yourusername/.zfiles
-DESKTOP-KL90B82%
+
 ```
 
-Now return to ***home*** directory, and create the file called ***.zshenv*** in this case the file must be have this name.
+* Now return to ***home*** directory, and create the file called ***.zshenv*** in this case the file must be have this name.
 
 ```bash
-DESKTOP-KL90B82% ls -ltra .zshenv
+ls -ltra .zshenv
 -rw-r--r-- 1 yourusername yourusername 0 Apr 27 14:33 .zshenv
-DESKTOP-KL90B82% pwd
+
+pwd
 /home/yourusername
-DESKTOP-KL90B82%
+
 ```
+
+* Now we will configure the ***.zshenv***.
+
+```bash
+echo 'export ZDOTDIR="$XDG_CONFIG_HOME/.zfiles"'                                              >> .zshenv
+echo 'export HISTFILE="$ZDOTDIR/.zhistory"    # History filepath'                             >> .zshenv
+echo 'export HISTSIZE=10000                   # Maximum events for internal history'          >> .zshenv
+echo 'export SAVEHIST=10000                   # Maximum events in history file'               >> .zshenv
+```
+
+* Copy the ***.zshrc*** to folder mv .zfiles.
+
+```bash
+mv .zshrc .zfiles
+```
+
