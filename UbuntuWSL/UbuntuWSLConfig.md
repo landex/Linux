@@ -184,4 +184,6 @@ The output is.
 
 :point_right: [Zshell Configuration](https://thevaluable.dev/zsh-install-configure-mouseless/)
 
+:point_right: [Move to Zshell](https://scriptingosx.com/2019/11/new-book-release-day-moving-to-zsh/)
+
 
