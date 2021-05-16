@@ -36,94 +36,49 @@ Now to effective the changes you close and open the terminal, if this window is 
 <img align="center" src="https://github.com/landex/Linux/blob/main/UbuntuWSL/images/zshell_start_20210426_235211.png" alt="drawing" width="400"/>
 
 
-In window above, click button **0** to create an ***.kshrc*** file only, we will configure manually the ***ZShell***.
-
-## ZShell files configuration
-
-### ZShell files
-
-* ***.zshenv*** - Should only contain user’s environment variables.
-* ***.zprofile*** - Can be used to execute commands just after logging in.
-* ***.zshrc*** - Should be used for the shell configuration and for executing commands.
-* ***.zlogin*** - Same purpose than .zprofile, but read just after .zshrc.
-* ***.zlogout*** - Can be used to execute commands when a shell exit.
-
-In this moment we will use only ***.zshenv*** and ***.zshrc***.
-
-By default the Zsh will try to find the user’s configuration files in the ***$HOME*** directory. You can change it by setting the environment variable ***$ZDOTDIR***.
-
-To organize, first create a folder in home directory in this case I'll call the ***.zfiles***.
+Follow the configuration that will be displayed in window. Fell Free.
 
 * Home Directory
+
 ```bash
 pwd
 /home/yourusername
 ```
 
-* Create the folder ***.zfiles***
-```bash
-mkdir .zfiles
-```
-
-* Access the folder created
-```bash
-cd .zfiles
-
-pwd
-/home/yourusername/.zfiles
-
-```
-
-* Now return to ***home*** directory, and create the file called ***.zshenv*** in this case the file must be have this name.
+* Let's insert some settings in our ***.zshrc*** file.
 
 ```bash
-ls -ltra .zshenv
--rw-r--r-- 1 yourusername yourusername 0 Apr 27 14:33 .zshenv
-
-pwd
-/home/yourusername
-
-```
-
-* Now we will configure the ***.zshenv***.
-
-```bash
-echo 'export XDG_CONFIG_HOME="$HOME/.zfiles"'                                                 >> .zshenv
-echo 'export XDG_DATA_HOME="$XDG_CONFIG_HOME/local/share"'                                    >> .zshenv
-echo 'export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"'                                         >> .zshenv
-echo 'export ZDOTDIR="$XDG_CONFIG_HOME/.zfiles"'                                              >> .zshenv
-echo 'export HISTFILE="$ZDOTDIR/.zhistory"    # History filepath'                             >> .zshenv
-echo 'export HISTSIZE=10000                   # Maximum events for internal history'          >> .zshenv
-echo 'export SAVEHIST=10000                   # Maximum events in history file'               >> .zshenv
-```
-
-* Copy the ***.zshrc*** to folder mv .zfiles.
-
-```bash
-mv .zshrc .zfiles
+DESKTOP-KCKTG5J% ls -ltra .zshrc
+-rw-r--r-- 1 yourusername yourusername 330 May 16 11:08 .zshrc
+DESKTOP-KCKTG5J%
 ```
 
 * Syntax Highlight.
-
-Access the ***.zfiles*** and run command below.
 
 ```bash
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 ```
 
+To void the possible change to delete the folder, we will hidden the folder run command below, to hidden the folde.
+
+```bash
+DESKTOP-KCKTG5J% mv zsh-syntax-highlighting .zsh-syntax-highlighting
+```
+
 After download completed run command below to enable syntax highlight, and close and open shell to enable.
 
 ```bash
-echo 'source $ZDOTDIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> $ZDOTDIR/.zshrc
+echo " #Inster the syntax highlighting configuration" >> ~/.zshrc
+echo 'source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ~/.zshrc
 ```
 
 * Grep with colored results.
 
 ```bash
-echo "# Alias to Colored Grep" >> $ZDOTDIR/.zshrc
-echo "alias grep='grep --color=auto'" >> $ZDOTDIR/.zshrc
-echo "alias fgrep='fgrep --color=auto'" >> $ZDOTDIR/.zshrc
-echo "alias egrep='egrep --color=auto'" >> $ZDOTDIR/.zshrc
+echo "# Alias to Colored Grep" >> ~/.zshrc
+echo "alias grep='grep --color=auto'" >> ~/.zshrc
+echo "alias fgrep='fgrep --color=auto'" >> ~/.zshrc
+echo "alias egrep='egrep --color=auto'" >> ~/.zshrc
 ```
 
 ## PS1 Variables
