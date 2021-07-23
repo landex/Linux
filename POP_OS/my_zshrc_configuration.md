@@ -127,6 +127,37 @@ echo '# To enable the syntax highlighting' >> $ZDOTDIR/.zshrc
 echo 'source $ZDOTDIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> $ZDOTDIR/.zshrc
 ```
 
+# .ZSHRC
+
+Now we will add some configuration to customize your interactive shell in this case the ***Z Shell***.
+
+This is our current ***.zshrc*** file.
+
+```bash
+pop-os% cat .zshrc
+# Created by newuser for 5.8
+# To enable the syntax highlighting
+source $ZDOTDIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+pop-os% 
+```
+
+some useful aliases
+
+* Colored ls and grep
+
+```bash
+echo '' >> $ZDOTDIR/.zshrc
+echo '# My aliases' >> $ZDOTDIR/.zshrc
+echo '# LS Aliases' >> $ZDOTDIR/.zshrc
+echo 'alias ls="ls --color=auto"' >> $ZDOTDIR/.zshrc
+echo '' >> $ZDOTDIR/.zshrc
+echo '# GREP Aliases' >> $ZDOTDIR/.zshrc
+echo 'alias grep="grep --color=auto"' >> $ZDOTDIR/.zshrc
+echo 'alias fgrep="fgrep --color=auto"' >> $ZDOTDIR/.zshrc
+echo 'alias egrep="egrep --color=auto"' >> $ZDOTDIR/.zshrc
+```
+
+
 ### References
 
 [Configuring Zsh Without Dependencies](https://thevaluable.dev/zsh-install-configure-mouseless/)
