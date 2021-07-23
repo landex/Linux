@@ -112,6 +112,20 @@ pop-os% ls -ltra .zsh_history
 pop-os% 
 ```
 
+Syntax Highlighting
+
+* To enable the syntax highlighting in your ***.zsh*** directory run command of **git** below.
+
+```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+```
+
+* Run commands below to add in your ***.zshrc***
+
+```bash
+echo '# To enable the syntax highlighting' >> $ZDOTDIR/.zshrc
+echo 'source $ZDOTDIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> $ZDOTDIR/.zshrc
+```
 
 ### References
 
