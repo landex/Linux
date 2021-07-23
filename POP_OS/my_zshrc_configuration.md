@@ -218,4 +218,4 @@ The output is.
 
 [Derek Taylor dotfiles](https://gitlab.com/dwt1/dotfiles)
 
-[https://wiki.gentoo.org/wiki/Zsh/Guide](https://wiki.gentoo.org/wiki/Zsh/Guide)
+[Zsh/Guide](https://wiki.gentoo.org/wiki/Zsh/Guide)
