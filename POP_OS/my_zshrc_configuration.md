@@ -201,7 +201,7 @@ Add configuration
 
 ```bash
 echo '# My PS1 configuration' >> $ZDOTDIR/.zshrc
-echo "export PS1='%B%F{108}YOURUSERNAME%f%b in %F{062}%~%f -> '" >> $ZDOTDIR/.zshrc
+echo "export PS1='%B%F{108}%n%f%b in %F{062}%~%f -> '" >> $ZDOTDIR/.zshrc
 ```
 
 The output is.
@@ -211,6 +211,7 @@ The output is.
 <img align="center" src="https://github.com/landex/MacBook/blob/main/BigSur/BigSur_Images/Screen%20Shot%202020-11-08%20at%2022.22.21.png" alt="drawing" width="450"/>
 
 
+Is this basic configuration, you can see my files in path to see other configurations, thanks!
 
 ### References
 
