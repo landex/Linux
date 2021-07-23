@@ -169,6 +169,44 @@ echo "alias mv='mv -i'" >> $ZDOTDIR/.zshrc
 echo "alias rm='rm -i'" >> $ZDOTDIR/.zshrc
 ```
 
+* Customize your PS1 and PS2  
+
+The Values to use in PS1.
+
+|Sequence  |Printed                                                         |
+|----------|----------------------------------------------------------------|
+| %T	      | System time (HH:MM).                                           |
+| %*	      | System time (HH:MM:SS).                                        |
+| %D	      | System date (YY-MM-DD).                                        |
+| %n	      | Current username.                                              |
+| %B - %b	 | Begin - end bold print.                                        |
+| %U - %u	 | Begin - end underlining.                                       |
+| %d	      | The current working directory.                                 |
+| %~	      | The current working directory, relative to the home directory. |
+| %M	      | The computer's hostname.                                       |
+| %m	      | The computer's hostname (truncated before the first period).   |
+| %l	      | The current tty.                                               |
+
+Below have the list of colors that you can use.
+
+
+
+<img align="center" src="https://github.com/landex/MacBook/blob/main/BigSur/BigSur_Images/Screen%20Shot%202020-11-08%20at%2022.05.06.png" alt="drawing" width="450"/>
+
+
+
+Example of command to define a colored output in PS1.
+```shell
+PS1='%B%F{108}YOURUSERNAME%f%b in %F{062}%~%f -> '
+```
+
+The output is.
+
+
+
+<img align="center" src="https://github.com/landex/MacBook/blob/main/BigSur/BigSur_Images/Screen%20Shot%202020-11-08%20at%2022.22.21.png" alt="drawing" width="450"/>
+
+
 
 ### References
 
@@ -179,3 +217,5 @@ echo "alias rm='rm -i'" >> $ZDOTDIR/.zshrc
 [XDG Base Directory](https://wiki.archlinux.org/title/XDG_Base_Directory)
 
 [Derek Taylor dotfiles](https://gitlab.com/dwt1/dotfiles)
+
+[https://wiki.gentoo.org/wiki/Zsh/Guide](https://wiki.gentoo.org/wiki/Zsh/Guide)
