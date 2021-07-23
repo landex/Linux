@@ -196,8 +196,12 @@ Below have the list of colors that you can use.
 
 
 Example of command to define a colored output in PS1.
-```shell
-PS1='%B%F{108}YOURUSERNAME%f%b in %F{062}%~%f -> '
+
+Add configuration
+
+```bash
+echo '# My PS1 configuration' >> $ZDOTDIR/.zshrc
+echo "export PS1='%B%F{108}YOURUSERNAME%f%b in %F{062}%~%f -> '" >> $ZDOTDIR/.zshrc
 ```
 
 The output is.
