@@ -76,13 +76,41 @@ No we will configure our ***.zshenv*** file.
 In our home directory run commands below.
 
 ```bash
-echo '# ZSH configurations ti define the $ZDOTDIR' >> .zshenv
+echo '# The ZSH configurations to define the $ZDOTDIR' >> .zshenv
 echo 'export XDG_CONFIG_HOME="$HOME/..zsh"' >> .zshenv
 echo 'export XDG_DATA_HOME="$XDG_CONFIG_HOME/local/share"' >> .zshenv 
 echo 'export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"' >> .zshenv 
 echo 'export ZDOTDIR="$XDG_CONFIG_HOME"' >> .zshenv
 ```
 
+After this close and reopen your terminal and run commando below to testing configuration.
+
+```bash
+pop-os% echo $ZDOTDIR
+/home/yourusername/.zsh
+pop-os% 
+```
+
+Add history configuration in your ***.zshenv*** file.
+
+```bash
+echo '' >> .zshenv
+echo '' >> .zshenv
+echo '# The history configuration' >> .zshenv
+echo 'export HISTFILE="$ZDOTDIR/.zsh_history"     # History filepath' >> .zshenv 
+echo 'export HISTSIZE=10000                   # Maximum events for internal history' >> .zshenv
+echo 'export SAVEHIST=10000                   # Maximum events in history file' >> .zshenv 
+```
+
+To testing the changes close and open terminal see that your history file is created.
+
+```bash
+pop-os% pwd
+/home/yourusername/.zsh
+pop-os% ls -ltra .zsh_history 
+-rw------- 1 yourusername yourusername 25 jul 23 11:18 .zsh_history
+pop-os% 
+```
 
 
 ### References
