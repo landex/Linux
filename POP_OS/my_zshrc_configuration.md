@@ -146,15 +146,27 @@ some useful aliases
 * Colored ls and grep
 
 ```bash
-echo '' >> $ZDOTDIR/.zshrc
-echo '# My aliases' >> $ZDOTDIR/.zshrc
-echo '# LS Aliases' >> $ZDOTDIR/.zshrc
-echo 'alias ls="ls --color=auto"' >> $ZDOTDIR/.zshrc
-echo '' >> $ZDOTDIR/.zshrc
-echo '# GREP Aliases' >> $ZDOTDIR/.zshrc
-echo 'alias grep="grep --color=auto"' >> $ZDOTDIR/.zshrc
-echo 'alias fgrep="fgrep --color=auto"' >> $ZDOTDIR/.zshrc
-echo 'alias egrep="egrep --color=auto"' >> $ZDOTDIR/.zshrc
+echo "" >> $ZDOTDIR/.zshrc
+echo "# My aliases" >> $ZDOTDIR/.zshrc
+echo "# LS Aliases" >> $ZDOTDIR/.zshrc
+echo "alias ls='ls --color=auto'" >> $ZDOTDIR/.zshrc
+echo "" >> $ZDOTDIR/.zshrc
+echo "# GREP Aliases" >> $ZDOTDIR/.zshrc
+echo "alias grep='grep --color=auto'" >> $ZDOTDIR/.zshrc
+echo "alias fgrep='fgrep --color=auto'" >> $ZDOTDIR/.zshrc
+echo "alias egrep='egrep --color=auto'" >> $ZDOTDIR/.zshrc
+```
+
+* Files Manipulations
+
+These alias help our during copy, move and delete files.
+
+```bash
+echo "" >> $ZDOTDIR/.zshrc
+echo "# To confirm before overriting something" >> $ZDOTDIR/.zshrc
+echo "alias cp='cp -i'" >> $ZDOTDIR/.zshrc
+echo "alias mv='mv -i'" >> $ZDOTDIR/.zshrc
+echo "alias rm='rm -i'" >> $ZDOTDIR/.zshrc
 ```
 
 
@@ -165,3 +177,5 @@ echo 'alias egrep="egrep --color=auto"' >> $ZDOTDIR/.zshrc
 [How to Install and Setup Zsh in Ubuntu 20.04](https://www.tecmint.com/install-zsh-in-ubuntu/)
 
 [XDG Base Directory](https://wiki.archlinux.org/title/XDG_Base_Directory)
+
+[Derek Taylor dotfiles](https://gitlab.com/dwt1/dotfiles)
