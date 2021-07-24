@@ -1,0 +1,1 @@
+# HyperJS Terminal configuration.
