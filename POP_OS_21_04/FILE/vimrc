@@ -1,0 +1,21 @@
+" Enable syntax highlighting
+
+syntax  on
+
+set expandtab
+
+set tabstop=2
+
+set shiftwidth=2
+
+" Auto identation
+
+set autoindent
+
+" Add line numbers
+
+set number
+
+" Show colunms
+
+set ruler
