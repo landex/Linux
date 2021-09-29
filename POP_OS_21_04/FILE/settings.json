@@ -1,0 +1,15 @@
+{
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    
+    "launch": {
+
+        "configurations": [],
+        "compounds": []
+    },
+    "editor.minimap.enabled": false,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 13,
+    "editor.fontWeight": "normal",
+}
