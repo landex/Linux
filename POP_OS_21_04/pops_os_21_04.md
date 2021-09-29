@@ -20,6 +20,14 @@ Aumento a fonte, para uma melhor visualização, não sei porque mas em telas fu
 
 
 
+* Fira Code
+
+Depois que conheci, sempre instalo essa fonte, acho ela a melhor...
+
+```bash
+sudo apt install fonts-firacode
+```
+
 * Video VLC e alguns codecs para assistir videos no laptop.
 
 ***VLC***
@@ -67,7 +75,7 @@ sudo apt update
 sudo apt install code
 ```
 
-Aqui temos o arquivo de configuração que utilizo, [VSCODE settings.json]()
+Aqui temos o arquivo de configuração que utilizo, [VSCODE settings.json](https://github.com/landex/Linux/blob/main/POP_OS_21_04/FILE/settings.json)
 
 
 ### Referências
@@ -79,3 +87,6 @@ Aqui temos o arquivo de configuração que utilizo, [VSCODE settings.json]()
 [Coisas para Fazer depois de Instalar o Ubuntu](https://mutschler.eu/linux/install-guides/ubuntu-post-install/)
 
 [VSCode no POP OS](https://www.codegrepper.com/code-examples/shell/how+to+install+vs+code+in+pop+os)
+
+[FiraCode](https://dev.to/josuerodriguez98/installing-firacode-on-windows-and-ubuntu-1fn1)
+
