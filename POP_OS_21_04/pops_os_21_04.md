@@ -20,6 +20,23 @@ Aumento a fonte, para uma melhor visualização, não sei porque mas em telas fu
 
 
 
+* Video VLC e alguns codecs para assistir videos no laptop.
+
+***VLC***
+```bash
+sudo apt install -y vlc
+```
+***Codecs***
+```bash
+sudo apt install -y libavcodec-extra libdvd-pkg; sudo dpkg-reconfigure libdvd-pkg
+```
+
+* Definindo um hostname melhor
+```bash
+hostnamectl set-hostname machine
+```
+* 
+
 ### Referências
 
 [Instalação do POP OS 21.04](https://mutschler.eu/linux/install-guides/pop-os-btrfs-21-04/)
