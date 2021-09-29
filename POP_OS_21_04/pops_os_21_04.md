@@ -35,7 +35,40 @@ sudo apt install -y libavcodec-extra libdvd-pkg; sudo dpkg-reconfigure libdvd-pk
 ```bash
 hostnamectl set-hostname machine
 ```
-* 
+* Instalando o ***vim***
+O *vim* é um excelente editor, para aquelas horas que você só quer editar um arquivo rápido de configurações. Por default ele já vem instalado nas distros **Linux**, mas gosto de instalar o ***vim***
+```bash
+sudo apt install -y vim
+```
+
+Depois de instalado o ***vim*** vamos criar um arquivo de configuração, para salvar algumas preferências do ***vim***.
+
+Em nosso diretório home, vamos criar o arquivo ***.vimrc***.
+```bash
+/home/yourusername
+```
+Ficando desta forma.
+```bash
+/home/yourusername
+yourusername@machine:~$ ls -ltra .vimrc 
+-rw-rw-r-- 1 yourusername yourusername 0 set 29 08:23 .vimrc
+```
+Ao lado temos o arquivo que utilizo, [.vimrc](https://github.com/landex/Linux/blob/main/POP_OS_21_04/FILE/vimrc).
+
+* VSCODE
+
+Depois do ***VIM*** vamos instalar o ***VSCODE*** que é um dos melhores editores de texto do mundo, ou praticamente uma IDE.
+
+Adicione os repositório e realize a instalação.
+```bash
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt update
+sudo apt install code
+```
+
+Aqui temos o arquivo de configuração que utilizo, [VSCODE settings.json]()
+
 
 ### Referências
 
@@ -44,3 +77,5 @@ hostnamectl set-hostname machine
 [Download do Chrome](https://www.google.com/chrome/?brand=BNSD&gclid=EAIaIQobChMIg-qt_-ai8wIVDgaRCh02qQ1LEAAYASAAEgIGePD_BwE&gclsrc=aw.ds)
 
 [Coisas para Fazer depois de Instalar o Ubuntu](https://mutschler.eu/linux/install-guides/ubuntu-post-install/)
+
+[VSCode no POP OS](https://www.codegrepper.com/code-examples/shell/how+to+install+vs+code+in+pop+os)
