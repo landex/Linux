@@ -78,6 +78,37 @@ sudo apt install code
 Aqui temos o arquivo de configuração que utilizo, [VSCODE settings.json](https://github.com/landex/Linux/blob/main/POP_OS_21_04/FILE/settings.json)
 
 
+* RUBY 3
+
+Uma das linguagens mais utilizadas em automação de testes, com isso vou mostrar o passso de como instalar.
+
+Faça o download, pode ser na pasta de downloads.
+
+```bash
+wget https://cache.ruby-lang.org/pub/ruby/3.0/ruby-3.0.2.tar.gz
+```
+
+Descompacte o arquivo
+```bash
+tar -xf ruby-3.0.2.tar.gz
+```
+
+Acesse a pasta e execute o comando abaixo.
+```bash
+/home/yourusername/Downloads/ruby-3.0.2
+./configure --enable-optimizations
+```
+
+Iniciando o build
+```bash
+make -j 2
+```
+Instalando
+```bash
+sudo make install
+```
+
+
 ### Referências
 
 [Instalação do POP OS 21.04](https://mutschler.eu/linux/install-guides/pop-os-btrfs-21-04/)
