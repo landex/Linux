@@ -108,6 +108,23 @@ Instalando
 sudo make install
 ```
 
+* Otimizando o uso da bateria
+
+```bash
+sudo apt install -y tlp tlp-rdw
+``` 
+
+Depois de instalado execute o comando abaixo e sem seguida faça o reboot
+```bash
+sudo tlp start
+```
+
+Depois do reboot veja se está rodando.
+```bash
+sudo systemctl status tlp.service
+```
+
+
 
 ### Referências
 
