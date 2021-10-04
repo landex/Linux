@@ -162,6 +162,8 @@ Se prefirir pode acessar o arquivo de configuração no caminho abaixo.
 ~/.config/kitty/kitty.conf
 ```
 
+Meu arquivo de configuração está neste link [kitty.conf](https://github.com/landex/Linux/blob/main/POP_OS_21_04/FILE/kitty.conf).
+
 ### Referências
 
 [Instalação do POP OS 21.04](https://mutschler.eu/linux/install-guides/pop-os-btrfs-21-04/)
