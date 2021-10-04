@@ -145,6 +145,22 @@ Depois do reboot veja se está rodando.
 sudo systemctl status tlp.service
 ```
 
+* ***KITTY***
+
+Kitty é um terminal leve e com focus em performance.
+
+Para instalar é só rodar o comando abaixo.
+
+```bash
+sudo apt install kitty
+```
+
+Configurações, pode ser acessadas via atalho *CONTROL+SHIFT+F2* e para carregar o terminal depois de configurar rode *CONTROL+SHIFT+F5*.
+Se prefirir pode acessar o arquivo de configuração no caminho abaixo.
+
+```bash
+~/.config/kitty/kitty.conf
+```
 
 ### Referências
 
@@ -159,4 +175,6 @@ sudo systemctl status tlp.service
 [FiraCode](https://dev.to/josuerodriguez98/installing-firacode-on-windows-and-ubuntu-1fn1)
 
 [Kitty](https://connectwww.com/how-to-install-kitty-on-ubuntu-kitty-terminal-emulator/61186/)
+
+[Kitty oficial](https://sw.kovidgoyal.net/kitty/conf/)
 
