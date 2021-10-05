@@ -167,7 +167,7 @@ Meu arquivo de configuração está neste link [kitty.conf](https://github.com/l
 
 Vamos instalar o java que é essencial, para algumas coisas...
 
-Primeiro passo faça o download do [Java 11 LTS](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html) comprimindo, para instalarmos os binários.
+Primeiro passo faça o download do [Java 17 LTS](https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz) comprimindo, para instalarmos os binários.
 
 Se não tiver instalado, instale o pacote abaixo.
 
@@ -253,4 +253,6 @@ javac 17
 [Kitty oficial](https://sw.kovidgoyal.net/kitty/conf/)
 
 [Java Instalação](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04)
+
+[Java17](https://www.linuxuprising.com/2021/09/how-to-install-oracle-java-17-lts-on.html)
 
