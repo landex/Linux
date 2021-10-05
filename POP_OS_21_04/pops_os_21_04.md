@@ -161,8 +161,80 @@ Se prefirir pode acessar o arquivo de configuração no caminho abaixo.
 ```bash
 ~/.config/kitty/kitty.conf
 ```
-
 Meu arquivo de configuração está neste link [kitty.conf](https://github.com/landex/Linux/blob/main/POP_OS_21_04/FILE/kitty.conf).
+
+* ***JAVA***
+
+Vamos instalar o java que é essencial, para algumas coisas...
+
+Primeiro passo faça o download do [Java 11 LTS](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html) comprimindo, para instalarmos os binários.
+
+Se não tiver instalado, instale o pacote abaixo.
+
+```bash
+sudo apt install software-properties-common
+```
+
+Vamos verificar a chave.
+
+```bash
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EA8CACC073C3DB2A
+```
+
+Esperamos o output abaixo:
+
+```bash
+Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+Executing: /tmp/apt-key-gpghome.p6879oKHFT/gpg.1.sh --keyserver keyserver.ubuntu.com --recv-keys EA8CACC073C3DB2A
+gpg: key EA8CACC073C3DB2A: "Launchpad PPA for Linux Uprising" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+```
+
+Adicione o repositório.
+
+```bash
+sudo add-apt-repository ppa:linuxuprising/java
+```
+
+Rode o comando para atualizar os pacotes.
+
+```bash
+sudo apt update
+``` 
+
+Crie o diretório abaixo.
+```bash
+sudo mkdir -p /var/cache/oracle-jdk17-installer-local/
+```
+
+Copie o arquivo baixando para a pasta.
+
+```bash
+sudo cp jdk-17_linux-x64_bin.tar.gz /var/cache/oracle-jdk17-installer-local/
+```
+
+Faça a instalação do pacote
+
+```bash
+sudo apt install oracle-java17-installer --install-recommends
+```
+
+Vai ser aberta a tela abaixo, confirme.
+
+Testando o Java.
+
+```bash
+java -version
+java version "17" 2021-09-14 LTS
+Java(TM) SE Runtime Environment (build 17+35-LTS-2724)
+Java HotSpot(TM) 64-Bit Server VM (build 17+35-LTS-2724, mixed mode, sharing)
+```
+
+```bash
+javac -version
+javac 17
+```
 
 ### Referências
 
@@ -179,4 +251,6 @@ Meu arquivo de configuração está neste link [kitty.conf](https://github.com/l
 [Kitty](https://connectwww.com/how-to-install-kitty-on-ubuntu-kitty-terminal-emulator/61186/)
 
 [Kitty oficial](https://sw.kovidgoyal.net/kitty/conf/)
+
+[Java Instalação](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04)
 
