@@ -77,7 +77,7 @@ In our home directory run commands below.
 
 ```bash
 echo '# The ZSH configurations to define the $ZDOTDIR' >> .zshenv
-echo 'export XDG_CONFIG_HOME="$HOME/..zsh"' >> .zshenv
+echo 'export XDG_CONFIG_HOME="$HOME/.zsh"' >> .zshenv
 echo 'export XDG_DATA_HOME="$XDG_CONFIG_HOME/local/share"' >> .zshenv 
 echo 'export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"' >> .zshenv 
 echo 'export ZDOTDIR="$XDG_CONFIG_HOME"' >> .zshenv
